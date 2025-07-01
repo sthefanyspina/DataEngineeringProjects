@@ -18,3 +18,6 @@ The project reads sales and product data from CSV files, performs a join operati
 - Apache Flink
 - Java Development Kit (JDK)
 - Maven or SBT (for building the project)
+
+
+<img src: "https://media.licdn.com/dms/image/v2/D4E12AQEvkLJ4M2NYdg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721193119738?e=2147483647&v=beta&t=40C-pmZjLUCxg0_-IuTjPFLjDYpTJxGIKe9lXgVkpfs">
