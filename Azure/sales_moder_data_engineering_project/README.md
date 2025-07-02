@@ -3,7 +3,7 @@ In this project, we setup and end to end data engineering using Apache Spark, Az
 
 
 ## System Architecture
-![System Architecture.jpeg](System%20Architecture.jpeg)
+<img src="https://github.com/airscholar/modern-data-eng-dbt-databricks-azure/blob/main/System%20Architecture.jpeg">
 
 ## Commands
 Try running the following commands:
