@@ -2,7 +2,7 @@
 This project provides an end-to-end data processing and visualization of visa numbers in Japan using PySpark and Plotly. The spark clusters are set up within a Docker container on Azure.
 
 ## System Architecture
-![System Architecture](assets/Sparkcluster_architecture.png)
+<img src="https://github.com/airscholar/Japan-visa-data-engineering/blob/main/assets/Sparkcluster_architecture.png">
 
 ## 🛠 Setup & Requirements
 1. **Azure Account**: Ensure you have an active Azure account.
