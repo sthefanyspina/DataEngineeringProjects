@@ -4,7 +4,7 @@ This Python-based project aims to fetch real-time YouTube metrics like likes, vi
 Also, KSqlDB was used for stream processing and the processed data is then sent to a Telegram bot for real-time notifications.
 
 ## System Architecture
-![YoutubeAnalytics architecture.png](assets%2FYoutubeAnalytics%20architecture.png)
+<img src="https://github.com/airscholar/YoutubeAnalytics/blob/main/assets%2FYoutubeAnalytics%20architecture.png">
 
 ## Requirements
 
