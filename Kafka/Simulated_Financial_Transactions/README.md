@@ -5,7 +5,7 @@
 This Python script is designed to generate simulated financial transactions and insert them into a PostgreSQL database. It's particularly useful for setting up a test environment for Change Data Capture (CDC) with Debezium. The script uses the `faker` library to create realistic, yet fictitious, transaction data and inserts it into a PostgreSQL table.
 
 ## System Architecture
-![system architecture.png](system%20architecture.png)
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*fI3IQ_Ce_5iP2WMZ5YBdZg.png">
 
 ## Prerequisites
 
