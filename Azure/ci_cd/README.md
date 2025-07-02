@@ -7,4 +7,4 @@ This repository is an Infrastructure as Code (IaC) project that leverages terraf
 4. Any IDE of your choice (VS Code, PyCharm, etc.)
 
 ## System Architecture
-![system_architecture.jpg](images%2Fsystem_architecture.jpg)
+<img src="https://github.com/airscholar/cicd_for_data_engineering/blob/main/images%2Fsystem_architecture.jpg">
