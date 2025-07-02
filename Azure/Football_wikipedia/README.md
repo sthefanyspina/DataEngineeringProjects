@@ -4,7 +4,7 @@ This Python-based project crawls data from Wikipedia using Apache Airflow, clean
 
 
 ## System Architecture
-![system_architecture.png](assets%2Fsystem_architecture.png)
+<img src="https://raw.githubusercontent.com/airscholar/FootballDataEngineering/main/assets/system_architecture.png">
 
 ## Requirements
 - Python 3.9 (minimum)
