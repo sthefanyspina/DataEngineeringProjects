@@ -1,0 +1,54 @@
+2025-10-09 08:07:07 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:07:07 - INFO - Iniciando extracao de dados.
+2025-10-09 08:07:07 - ERROR - Erro ao buscar dados. Código HTTP: 502
+2025-10-09 08:07:07 - ERROR - Pipeline falhou: Erro ao buscar dados: 502
+2025-10-09 08:07:57 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:07:57 - INFO - Iniciando extracao de dados.
+2025-10-09 08:07:59 - INFO - Extracao concluída. Linhas extraídas: 231
+2025-10-09 08:07:59 - INFO - Iniciando transformacao dos dados.
+2025-10-09 08:07:59 - INFO - Transformacao concluída. Linhas após limpeza: 231
+2025-10-09 08:07:59 - INFO - Iniciando carregamento para a tabela 'covid_data'.
+2025-10-09 08:07:59 - ERROR - Erro no carregamento: No module named 'mysql'
+2025-10-09 08:07:59 - ERROR - Pipeline falhou: No module named 'mysql'
+2025-10-09 08:09:12 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:09:12 - INFO - Iniciando extracao de dados.
+2025-10-09 08:09:13 - INFO - Extracao concluída. Linhas extraídas: 231
+2025-10-09 08:09:13 - INFO - Iniciando transformacao dos dados.
+2025-10-09 08:09:13 - INFO - Transformacao concluída. Linhas após limpeza: 231
+2025-10-09 08:09:13 - INFO - Iniciando carregamento para a tabela 'covid_data'.
+2025-10-09 08:09:13 - ERROR - Erro no carregamento: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:09:13 - ERROR - Pipeline falhou: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:11:15 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:11:15 - INFO - Iniciando extracao de dados.
+2025-10-09 08:11:16 - INFO - Extracao concluída. Linhas extraídas: 231
+2025-10-09 08:11:16 - INFO - Iniciando transformacao dos dados.
+2025-10-09 08:11:16 - INFO - Transformacao concluída. Linhas após limpeza: 231
+2025-10-09 08:11:16 - INFO - Iniciando carregamento para a tabela 'covid_data'.
+2025-10-09 08:11:16 - ERROR - Erro no carregamento: (mysql.connector.errors.ProgrammingError) 1049 (42000): Unknown database 'covid_database'
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:11:16 - ERROR - Pipeline falhou: (mysql.connector.errors.ProgrammingError) 1049 (42000): Unknown database 'covid_database'
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:12:28 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:12:28 - INFO - Iniciando extracao de dados.
+2025-10-09 08:12:28 - INFO - Extracao concluída. Linhas extraídas: 231
+2025-10-09 08:12:28 - INFO - Iniciando transformacao dos dados.
+2025-10-09 08:12:28 - INFO - Transformacao concluída. Linhas após limpeza: 231
+2025-10-09 08:12:28 - INFO - Iniciando carregamento para a tabela 'covid_data'.
+2025-10-09 08:12:29 - ERROR - Erro no carregamento: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'inf' in 'field list'
+[SQL: INSERT INTO covid_data (country, cases, deaths, recovered, population, cases_per_million) VALUES (%(country)s, %(cases)s, %(deaths)s, %(recovered)s, %(population)s, %(cases_per_million)s)]
+[parameters: [{'country': 'Afghanistan', 'cases': 234174, 'deaths': 7996, 'recovered': 211080, 'population': 40754388, 'cases_per_million': 5745.982493958688}, {'country': 'Albania', 'cases': 334863, 'deaths': 3605, 'recovered': 330233, 'population': 2866374, 'cases_per_million': 116824.60139535175}, {'country': 'Algeria', 'cases': 272010, 'deaths': 6881, 'recovered': 183061, 'population': 45350148, 'cases_per_million': 5997.99586100579}, {'country': 'Andorra', 'cases': 48015, 'deaths': 165, 'recovered': 0, 'population': 77463, 'cases_per_million': 619844.3127686767}, {'country': 'Angola', 'cases': 107327, 'deaths': 1937, 'recovered': 103419, 'population': 35027343, 'cases_per_million': 3064.09195810256}, {'country': 'Anguilla', 'cases': 3904, 'deaths': 12, 'recovered': 0, 'population': 15230, 'cases_per_million': 256336.1785948785}, {'country': 'Antigua and Barbuda', 'cases': 9106, 'deaths': 146, 'recovered': 8954, 'population': 99509, 'cases_per_million': 91509.31071561367}, {'country': 'Argentina', 'cases': 10128845, 'deaths': 130841, 'recovered': 9997258, 'population': 46010234, 'cases_per_million': 220143.30550894394}  ... displaying 10 of 231 total bound parameter sets ...  {'country': 'Zambia', 'cases': 349304, 'deaths': 4069, 'recovered': 341316, 'population': 19470234, 'cases_per_million': 17940.410988383603}, {'country': 'Zimbabwe', 'cases': 266359, 'deaths': 5740, 'recovered': 258888, 'population': 15331428, 'cases_per_million': 17373.397963973086}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:12:29 - ERROR - Pipeline falhou: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'inf' in 'field list'
+[SQL: INSERT INTO covid_data (country, cases, deaths, recovered, population, cases_per_million) VALUES (%(country)s, %(cases)s, %(deaths)s, %(recovered)s, %(population)s, %(cases_per_million)s)]
+[parameters: [{'country': 'Afghanistan', 'cases': 234174, 'deaths': 7996, 'recovered': 211080, 'population': 40754388, 'cases_per_million': 5745.982493958688}, {'country': 'Albania', 'cases': 334863, 'deaths': 3605, 'recovered': 330233, 'population': 2866374, 'cases_per_million': 116824.60139535175}, {'country': 'Algeria', 'cases': 272010, 'deaths': 6881, 'recovered': 183061, 'population': 45350148, 'cases_per_million': 5997.99586100579}, {'country': 'Andorra', 'cases': 48015, 'deaths': 165, 'recovered': 0, 'population': 77463, 'cases_per_million': 619844.3127686767}, {'country': 'Angola', 'cases': 107327, 'deaths': 1937, 'recovered': 103419, 'population': 35027343, 'cases_per_million': 3064.09195810256}, {'country': 'Anguilla', 'cases': 3904, 'deaths': 12, 'recovered': 0, 'population': 15230, 'cases_per_million': 256336.1785948785}, {'country': 'Antigua and Barbuda', 'cases': 9106, 'deaths': 146, 'recovered': 8954, 'population': 99509, 'cases_per_million': 91509.31071561367}, {'country': 'Argentina', 'cases': 10128845, 'deaths': 130841, 'recovered': 9997258, 'population': 46010234, 'cases_per_million': 220143.30550894394}  ... displaying 10 of 231 total bound parameter sets ...  {'country': 'Zambia', 'cases': 349304, 'deaths': 4069, 'recovered': 341316, 'population': 19470234, 'cases_per_million': 17940.410988383603}, {'country': 'Zimbabwe', 'cases': 266359, 'deaths': 5740, 'recovered': 258888, 'population': 15331428, 'cases_per_million': 17373.397963973086}]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-09 08:29:44 - INFO - Iniciando pipeline ETL.
+2025-10-09 08:29:44 - INFO - Iniciando extracao de dados.
+2025-10-09 08:29:45 - INFO - Extracao concluída. Linhas extraídas: 231
+2025-10-09 08:29:45 - INFO - Iniciando transformacao dos dados.
+2025-10-09 08:29:45 - INFO - Transformacao concluída. Linhas após limpeza: 231
+2025-10-09 08:29:45 - INFO - Iniciando carregamento para a tabela 'covid_data'.
+2025-10-09 08:29:45 - INFO - Carregamento concluído. 231 linhas inseridas na tabela 'covid_data'.
+2025-10-09 08:29:45 - INFO - Pipeline finalizado com sucesso!
