@@ -1,0 +1,12 @@
+{
+    "valores_nulos": {
+        "Culmen Length (mm)": 2,
+        "Culmen Depth (mm)": 2,
+        "Flipper Length (mm)": 2,
+        "Body Mass (g)": 2,
+        "Sex": 10,
+        "Delta 15 N (o/oo)": 14,
+        "Delta 13 C (o/oo)": 13,
+        "Comments": 318
+    }
+}
