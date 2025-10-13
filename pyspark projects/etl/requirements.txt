@@ -1,0 +1,6 @@
+Crie um arquivo `requirements.txt` com:
+```txt
+pyspark==3.5.1
+faker==20.1.0
+matplotlib==3.9.2
+pandas==2.2.3
