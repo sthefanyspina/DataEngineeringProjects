@@ -1,0 +1,6 @@
+2025-10-22 17:16:06,067 - INFO - Conexão com o banco MySQL estabelecida com sucesso.
+2025-10-22 17:16:06,067 - INFO - ==== Início do pipeline de ingestão ====
+2025-10-22 17:16:06,488 - INFO - Arquivo lido com sucesso: dados_sujo.csv (510000 registros)
+2025-10-22 17:16:06,538 - ERROR - Validação falhou para dados_sujo.csv: ["Erro de tipo na coluna 'idade'", "Erro de tipo na coluna 'renda'", 'Há valores nulos no dataset']
+2025-10-22 17:16:07,332 - WARNING - Registros rejeitados salvos em rejected\rejected_dados_sujo_20251022171606.csv
+2025-10-22 17:16:07,340 - INFO - ==== Pipeline finalizado ====
