@@ -1,0 +1,82 @@
+{
+  "not_null_nome": {
+    "passed": true,
+    "details": null
+  },
+  "unique_id": {
+    "passed": false,
+    "details": null
+  },
+  "valid_email": {
+    "passed": true,
+    "details": null
+  },
+  "positive_preco": {
+    "passed": true,
+    "details": null
+  },
+  "date_consistency": {
+    "passed": false,
+    "details": null
+  },
+  "percentual_range": {
+    "passed": false,
+    "details": null
+  },
+  "enum_status": {
+    "passed": true,
+    "details": null
+  },
+  "no_duplicates": {
+    "passed": false,
+    "details": null
+  },
+  "valor_total_check": {
+    "passed": true,
+    "details": null
+  },
+  "created_before_updated": {
+    "passed": false,
+    "details": null
+  },
+  "parcelas_range": {
+    "passed": true,
+    "details": null
+  },
+  "country_state_match": {
+    "passed": true,
+    "details": null
+  },
+  "future_dates_check": {
+    "passed": true,
+    "details": null
+  },
+  "length_nome": {
+    "passed": true,
+    "details": null
+  },
+  "id_positive": {
+    "passed": true,
+    "details": null
+  },
+  "cpf_length": {
+    "passed": false,
+    "details": null
+  },
+  "no_negative_quantidade": {
+    "passed": false,
+    "details": null
+  },
+  "preco_positive": {
+    "passed": true,
+    "details": null
+  },
+  "no_future_created": {
+    "passed": true,
+    "details": null
+  },
+  "id_cliente_valid": {
+    "passed": true,
+    "details": null
+  }
+}
