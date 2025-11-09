@@ -73,7 +73,7 @@ A pipeline realiza as seguintes etapas:
 
 ---
 
-##🗄️Configuração do Banco de Dados
+## 🗄️Configuração do Banco de Dados
 A conexão com o MySQL é feita através da string definida no código:
 conn_string = "mysql+mysqlconnector://root:senha@localhost/covid_database"
 
@@ -87,7 +87,7 @@ A pipeline cria (ou substitui) automaticamente a tabela covid_data.
 
 ---
 
-##🧾 Logs
+## 🧾 Logs
 Durante a execução, os logs são gerados em:
 
 Arquivo: etl_pipeline.log
