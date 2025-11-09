@@ -77,6 +77,7 @@ mysql-connector-python
 A conexão com o MySQL é feita através da string definida no código:
 conn_string = "mysql+mysqlconnector://root:senha@localhost/covid_database"
 
+
 Substitua:
 root → seu usuário do MySQL
 senha → sua senha
