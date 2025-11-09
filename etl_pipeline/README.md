@@ -95,7 +95,7 @@ Arquivo: etl_pipeline.log
 Console: saída padrão (terminal)
 
 Cada execução registra:
-Início e término das etapas (Extração, Transformação, Carregamento)
-Número de linhas processadas
-Erros ou falhas detalhadas
+- Início e término das etapas (Extração, Transformação, Carregamento)
+- Número de linhas processadas
+- Erros ou falhas detalhadas
 
