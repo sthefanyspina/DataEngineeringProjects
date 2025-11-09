@@ -50,12 +50,12 @@ A pipeline realiza as seguintes etapas:
              |
              v
       [ Transformação ]
-   - Limpeza de dados
-   - Cálculo de métricas
+      Limpeza de dados
+      Cálculo de métricas
              |
              v
-      [ Carregamento ]
-   -> Banco MySQL
+      [ Carregamento ] 
+         Banco MySQL
              |
              v
     +----------------+
@@ -91,6 +91,7 @@ A pipeline cria (ou substitui) automaticamente a tabela covid_data.
 Durante a execução, os logs são gerados em:
 
 Arquivo: etl_pipeline.log
+
 Console: saída padrão (terminal)
 
 Cada execução registra:
