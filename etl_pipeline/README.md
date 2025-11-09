@@ -65,11 +65,11 @@ A pipeline realiza as seguintes etapas:
 ---
 
 ## Requirements
-requests
-pandas
-numpy
-SQLAlchemy
-mysql-connector-python
+- requests
+- pandas
+- numpy
+- SQLAlchemy
+- mysql-connector-python
 
 ---
 
