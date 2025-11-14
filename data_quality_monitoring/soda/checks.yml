@@ -1,0 +1,56 @@
+checks for sales_data:
+
+  # ---------------------------
+  # Null Value Checks
+  # ---------------------------
+  - name: Null Value Checks
+    checks:
+      - missing_count(ID_Venda) = 0
+      - missing_percent(Data_Venda) < 5%
+      - missing_percent(Hora_Venda) < 5%
+      - missing_percent(Tipo_Venda) < 5%
+      - missing_percent(Status_Venda) < 5%
+
+  # ---------------------------
+  # Duplicate Checks
+  # ---------------------------
+  - name: Duplicate ID Checks
+    checks:
+      - duplicate_count(ID_Venda) = 0
+
+  # ---------------------------
+  # Data Type and Format Checks
+  # ---------------------------
+  - name: Data Type Consistency Checks
+    checks:
+      # ID must be integer
+      - invalid_percent(ID_Venda) = 0:
+          valid_format: number
+
+      # Dates must be valid calendar dates
+      - invalid_percent(Data_Venda) = 0:
+          valid_format: date
+
+      # Time must follow HH:MM format
+      - invalid_percent(Hora_Venda) = 0:
+          valid_format: time
+
+  # ---------------------------
+  # Categorical Value Checks
+  # ---------------------------
+  - name: Category Validation Checks
+    checks:
+      - invalid_percent(Tipo_Venda) = 0:
+          valid_values: ["Online", "In-store", "Phone", "Mobile"]
+
+      - invalid_percent(Status_Venda) = 0:
+          valid_values: ["Completed", "Pending", "Cancelled"]
+
+  # ---------------------------
+  # Schema Change Checks
+  # ---------------------------
+  - name: Schema Checks
+    checks:
+      - schema:
+          warn:
+            when schema.changed: any
