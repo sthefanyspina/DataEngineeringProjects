@@ -1,6 +1,0 @@
-*.tfstate*
-*.out
-*.lock*
-.terraform
-venv
-.idea
