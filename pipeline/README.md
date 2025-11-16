@@ -1,133 +1,66 @@
-# 🧩 Data Pipeline + Dashboard — Normalização de Dataset
+# 🧩 Data Pipeline + Dashboard
 
-Projeto completo de engenharia de dados e BI, que demonstra a criação de um **pipeline de dados automatizado**, capaz de:
+A complete Data Engineering & BI project demonstrating the creation of an **automated data pipeline** capable of:
 
-- Coletar e consolidar dados (de CSV/API)
-- Tratar e **normalizar informações inconsistentes**
-- Gerar um **dataset limpo e padronizado**
-- Persistir os dados em um **banco relacional (PostgreSQL)**
-- Conectar o banco a uma ferramenta de **Business Intelligence (Power BI / Metabase / Looker Studio)**
-- Criar um **dashboard interativo** de acompanhamento
+- Collecting and consolidating data (from CSV / API)
+- Cleaning and normalizing inconsistent information
+- Generating a clean and standardized dataset
+- Persisting the data in a relational database (PostgreSQL)
+- Connecting the database to a Business Intelligence tool, in this case Power BI 
+- Creating an interactive monitoring dashboard
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
-📦 pipeline-dados
+📦 data-pipeline
 ├── data/
 │ ├── raw/
-│ │ └── dados_clientes_raw.csv # Dataset sujo (original)
+│ │ └── dados_clientes_raw.csv # Original dirty dataset
 │ └── processed/
-│ └── dados_clientes_limpo.csv # Dataset limpo e normalizado
+│ └── dados_clientes_limpo.csv # Clean & normalized dataset
 │
-├── pipeline.py # Script principal do pipeline
-├── gerar_dataset_sujo.py # Script para gerar o dataset com erros
-├── requirements.txt # Dependências do projeto
-├── README.md # Este arquivo
-└── dashboard/ # Pasta opcional para prints ou arquivos do dashboard
-
-yaml
-Copiar código
+├── pipeline.py # Main pipeline script
+├── gerar_dataset_sujo.py # Script to generate a dirty dataset
+├── requirements.txt # Project dependencies
+├── README.md # This file
+└── dashboard/ # Optional folder for dashboard screens/files
 
 ---
 
-## ⚙️ Etapas do Projeto
+## ⚙️ Project Steps
 
-### 1️⃣ Gerar o Dataset “Sujo”
+### 1️⃣ Generate the “Dirty” Dataset
 
-O script `gerar_dataset_sujo.py` cria um dataset com **mais de 200.000 linhas**, contendo:
+The script `generate_data.py` creates a dataset with **over 200,000 rows**, containing:
 
-- **id** → com duplicatas e erros de tipo  
-- **nome** → com capitalização inconsistente e espaçamentos extras  
-- **data_nascimento** → com múltiplos formatos de data e valores inválidos  
-- **valor_compra** → com números, textos incorretos e valores ausentes  
+- **id** → with duplicates and wrong data types  
+- **name** → inconsistent capitalization and extra spaces  
+- **birth_date** → multiple formats + invalid values  
+- **purchase_value** → numbers, incorrect text, missing values  
 
-**Execute:**
 
-```bash
-python gerar_dataset_sujo.py
-O arquivo gerado será salvo em:
+### 2️⃣ Run the Cleaning Pipeline
+The script pipeline.py performs the following steps:
 
-bash
-Copiar código
-data/raw/dados_clientes_raw.csv
-2️⃣ Executar o Pipeline de Limpeza
-O script pipeline.py realiza as seguintes etapas:
+- Reads raw data
+- Standardizes and normalizes (names, dates, numeric types)
+- Removes duplicates and fixes errors
+- Generates a clean CSV
+- Writes data into PostgreSQL
 
-Leitura dos dados brutos (raw)
+### 3️⃣ Database (PostgreSQL)
+Create the database and configure access:
 
-Padronização e normalização (nomes, datas, tipos numéricos)
+### 4️⃣ BI Connection
+You can connect the database to:
 
-Remoção de duplicatas e correção de erros
+Power BI
+- Get Data → PostgreSQL Database
 
-Geração de um CSV “limpo”
 
-Gravação dos dados em um banco PostgreSQL
-
-Execute:
-
-bash
-Copiar código
-python pipeline.py
-O dataset limpo será salvo em:
-
-bash
-Copiar código
-data/processed/dados_clientes_limpo.csv
-3️⃣ Banco de Dados (PostgreSQL)
-Crie o banco e configure o acesso:
-
-sql
-Copiar código
-CREATE DATABASE meubanco;
-CREATE USER usuario WITH PASSWORD 'senha';
-GRANT ALL PRIVILEGES ON DATABASE meubanco TO usuario;
-Edite no pipeline.py:
-
-python
-Copiar código
-engine = create_engine("postgresql+psycopg2://usuario:senha@localhost:5432/meubanco")
-A tabela clientes será criada automaticamente após executar o pipeline.
-
-4️⃣ Conexão com o BI
-Você pode conectar o banco de dados a ferramentas como:
-
-🟡 Power BI
-Vá em Obter Dados → Banco de Dados PostgreSQL
-
-Insira as credenciais do seu banco
-
-Selecione a tabela clientes
-
-🔵 Metabase
-Adicione nova conexão → PostgreSQL
-
-Configure servidor, banco, usuário e senha
-
-Crie dashboards com filtros e visualizações
-
-🔴 Looker Studio
-Conecte via conector PostgreSQL
-
-Autentique com suas credenciais
-
-Crie gráficos e painéis interativos
-
-📊 Métricas e Visualizações Sugeridas
-Número total de clientes
-
-Valor total de compras
-
-Média de compras por cliente
-
-Distribuição de clientes por idade
-
-Clientes com valores de compra acima da média
-
-🧠 Tecnologias Utilizadas
-Categoria	Tecnologias
-Linguagem	Python 3.9+
-Bibliotecas	Pandas, NumPy, Faker, SQLAlchemy, psycopg2
-Banco de Dados	PostgreSQL
-Visualização	Power BI / Metabase / Looker Studio
-Sistema Operacional	Windows / Linux / macOS
+### 🧠 Technologies Used
+- Python 3.9+
+- Pandas, NumPy, Faker, SQLAlchemy, psycopg2
+- PostgreSQL
+- Power BI
